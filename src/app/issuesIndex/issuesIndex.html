@@ -2,7 +2,9 @@
 	<h2>Voice of South LA</h2>
 	<ul>
     	<li ng-repeat="issue in indexCtrl.issues" ng-click="indexCtrl.goToIssue(issue.issue)">
-	    	<img ng-src="{{issue.imageUrl}}">
+        <div class="issue-image-contain">
+	    	  <img ng-src="{{issue.imageUrl}}">
+        </div>
     		<div class="title">
     			<a href="">{{ issue.title }}</a>
     		</div>
