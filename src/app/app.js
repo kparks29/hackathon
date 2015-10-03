@@ -3,11 +3,13 @@
 
 	var dependencies = [
 		'ui.router',
-		'ngStorage',
-		'file-model',
-		'HACKATHON.filters'
+		'HACKATHON.filters',
+		'HACKATHON.service',
+		'HACKATHON.controllers'
 	];
 
+	angular.module('HACKATHON.service', [])
+	angular.module('HACKATHON.controllers', []);
 	angular.module('HACKATHON', dependencies);
 
 })();

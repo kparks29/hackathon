@@ -14,9 +14,9 @@
 
 
 // Components
-
+@import "../app/issuesForm/issuesForm";
 
 // Override styleguide
-.large-button {
-	max-width: 100%;
+body {
+	margin: 0;
 }
