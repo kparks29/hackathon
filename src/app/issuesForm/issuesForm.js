@@ -24,7 +24,9 @@
 		function email() {
 			var payload = {
 				recipients: this.recipients,
-				message: this.message
+				body: this.message,
+				subject: this.subject
+
 			}
 			issueService.email(payload).then(function () {
 				$state.go('confirm', { issue: issue });
@@ -36,6 +38,7 @@
 		issueService.getIssueDetails(issue).then(function (issueDetails) {
 			self.message = issueDetails.message;
 			self.recipients = issueDetails.recipients;
+			self.subject = issueDetails.subject;
 		});
 
 		this.addRecipient = addRecipient;

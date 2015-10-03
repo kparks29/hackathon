@@ -9,11 +9,18 @@
 		});
 	}
 
-	function issuesIndexCtrl (issueService) {
+	function issuesIndexCtrl (issueService, $state) {
 		var self = this;
+
+		function goToIssue (issue) {
+			$state.go('issues-form', { issue: issue });
+		}
+
 		issueService.getIssueIndexDetails().then(function (issueIndexDetails) {
 			self.issues = issueIndexDetails.issues;
 		});
+
+		this.goToIssue = goToIssue;
 	}
 
 	angular.module('HACKATHON.controllers')

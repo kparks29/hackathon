@@ -1,7 +1,7 @@
 (function () {
 	'use strict';
 
-	function issueService($http, $q) {
+	function issueService($http, apiUrl, apiKey) {
 		function getIssueDetails (issue) {
 			return $http.get('common/data/' + issue + '.json').then(function (response) {
 				return response.data;
@@ -15,7 +15,9 @@
 	    }
 
     	function email (payload) {
-			return $q.when();
+			return $http.post(apiUrl + '/email?key=' + apiKey, payload).then(function (response) {
+				return response.data;
+			});
 		}
 
 		return {
