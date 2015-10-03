@@ -1,8 +1,10 @@
 (function () {
 	'use strict';
 
-	var apiUrl = 'http://10.165.1.125:3000';
+	var apiUrl = 'http://voiceofsouthla.herokuapp.com',
+		apiKey = 'alkfnqwejnfkandsklgfjkadafda';
 
 	angular.module('HACKATHON.constants')
-		.constant('apiUrl', apiUrl);
+		.constant('apiUrl', apiUrl)
+		.constant('apiKey', apiKey);
 })();
