@@ -1,9 +1,8 @@
 (function () {
 	'use strict';
 
-	function run () {
-
-
+	function run ($FB) {
+		$FB.init('863285860433595');
 	}
 
 	angular.module('HACKATHON')

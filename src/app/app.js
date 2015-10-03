@@ -3,6 +3,7 @@
 
 	var dependencies = [
 		'ui.router',
+		'djds4rce.angular-socialshare',
 		'HACKATHON.filters',
 		'HACKATHON.service',
 		'HACKATHON.controllers'
