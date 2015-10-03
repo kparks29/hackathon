@@ -88,6 +88,33 @@ $largeIconMargin:								0 auto !default;
 .icon-settings {
 	@include iconBackground('../assets/images/icons/icon_settings.svg');
 }
+.icon-social-facebook {
+	background-image: url('../assets/images/icons/icon_facebook.svg');
+	background-size: contain;
+	background-color: #3b5998;
+	height: 100px;
+	width: 100px;
+}
+.icon-social-twitter {
+	background-image: url('../assets/images/icons/icon_twitter.png');
+	background-size: contain;
+	height: 100px;
+	width: 100px;
+}
+.icon-social-link {
+	background-image: url('../assets/images/icons/icon_link.png');
+	background-size: contain;
+	background-color: #B3DDC0;
+	height: 100px;
+	width: 100px;
+}
+.icon-social-mail {
+	background-image: url('../assets/images/icons/icon_mail.png');
+	background-size: contain;
+	background-color: #FD8039;
+	height: 100px;
+	width: 100px;
+}
 .icon-trash {
 	@include iconBackground('../assets/images/icons/icon_trash.svg');
 }

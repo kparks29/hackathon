@@ -296,6 +296,33 @@
   .icon-settings:before {
     display: none; }
 
+.icon-social-facebook {
+  background-image: url("../assets/images/icons/icon_facebook.svg");
+  background-size: contain;
+  background-color: #3b5998;
+  height: 100px;
+  width: 100px; }
+
+.icon-social-twitter {
+  background-image: url("../assets/images/icons/icon_twitter.png");
+  background-size: contain;
+  height: 100px;
+  width: 100px; }
+
+.icon-social-link {
+  background-image: url("../assets/images/icons/icon_link.png");
+  background-size: contain;
+  background-color: #B3DDC0;
+  height: 100px;
+  width: 100px; }
+
+.icon-social-mail {
+  background-image: url("../assets/images/icons/icon_mail.png");
+  background-size: contain;
+  background-color: #FD8039;
+  height: 100px;
+  width: 100px; }
+
 .icon-trash {
   background-repeat: no-repeat;
   mask-image: url("../assets/images/icons/icon_trash.svg");
@@ -669,10 +696,8 @@ form.submitted textarea.ng-invalid-required {
     padding: 0 0 30px; }
 
 #issues-form {
-  background-color: #F3F3F3;
   padding: 0;
-  overflow-x: hidden;
-  min-height: 100vh; }
+  overflow-x: hidden; }
   #issues-form h2 {
     padding-top: 20px;
     text-align: center;
@@ -680,7 +705,8 @@ form.submitted textarea.ng-invalid-required {
     font-family: source_sans_proregular; }
   #issues-form h3 {
     text-align: left;
-    margin-left: 0; }
+    margin-left: 0;
+    margin-top: 0; }
   #issues-form .issues-form-container {
     text-align: left;
     max-width: 600px;
@@ -700,28 +726,37 @@ form.submitted textarea.ng-invalid-required {
     margin: 0; }
 
 #issues-confirm {
-  background-color: #F3F3F3;
-  height: 1vh; }
+  height: 100vh; }
+  #issues-confirm .confirm-message-container {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%); }
   #issues-confirm h2 {
     padding-top: 20px;
-    margin-top: 0;
     text-align: center;
-    text-transform: uppercase; }
+    margin-top: 0;
+    font-family: source_sans_proregular; }
   #issues-confirm #icons {
     width: 100%;
     text-align: center; }
   #issues-confirm .icon {
     display: inline-block;
-    border: 2px solid black;
     border-radius: 3px;
-    margin: 10px; }
-
-@media (min-device-width: 320px) and (max-device-width: 480px) {
-  #issues-form h3 {
-    margin-top: 0; } }
+    margin: 10px;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    #issues-confirm .icon:hover {
+      opacity: 0.6; }
 
 body {
-  margin: 0; }
+  margin: 0;
+  background-color: #F3F3F3;
+  min-height: 100vh; }
 
 * {
   outline: none;
