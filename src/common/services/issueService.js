@@ -7,11 +7,20 @@
 				return response.data;
 			});
 		}
-		function email (payload) {
+
+	    function getIssueIndexDetails () {
+	      return $http.get('common/data/issuesIndex.json').then(function (response) {
+	        return response.data;
+	      });
+	    }
+
+    	function email (payload) {
 			return $q.when();
 		}
+
 		return {
 			getIssueDetails: getIssueDetails,
+      		getIssueIndexDetails: getIssueIndexDetails,
 			email: email
 		};
 	}
