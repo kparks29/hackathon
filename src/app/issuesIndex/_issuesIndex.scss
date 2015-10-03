@@ -10,21 +10,24 @@
 	    padding: 0;
 	}
 	li {
+		border-radius: $borderRadius;
 		cursor: hand;
 		list-style-type: none;
-		margin-bottom: 30px;
-		border: 2px solid black;
+		margin: 20px auto;
+		.issue-image-contain {
+			height: 140px;
+			overflow: hidden;
+		}
 		img {
 			width: 100%;
-			border-radius: $borderRadius;
+			height: auto;
 		}
 		.title {
-			border-radius: $borderRadius;
 			background-color: white;
 			width: 100%;
-			height: 40px;
-			line-height: 40px;
-			text-align: center;
+			padding: 10px;
+			line-height: 18px;
+			text-align: left;
 			a {
 				text-decoration: none;
 				color: $homdnaDarkFont;

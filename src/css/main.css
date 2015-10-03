@@ -763,20 +763,22 @@ form.submitted textarea.ng-invalid-required {
   #issues-index ul {
     padding: 0; }
   #issues-index li {
+    border-radius: 3px;
     cursor: hand;
     list-style-type: none;
-    margin-bottom: 30px;
-    border: 2px solid black; }
+    margin: 20px auto; }
+    #issues-index li .issue-image-contain {
+      height: 140px;
+      overflow: hidden; }
     #issues-index li img {
       width: 100%;
-      border-radius: 3px; }
+      height: auto; }
     #issues-index li .title {
-      border-radius: 3px;
       background-color: white;
       width: 100%;
-      height: 40px;
-      line-height: 40px;
-      text-align: center; }
+      padding: 10px;
+      line-height: 18px;
+      text-align: left; }
       #issues-index li .title a {
         text-decoration: none;
         color: #546A79;
