@@ -1,12 +1,11 @@
 (function () {
 	'use strict';
 
-	function config ($httpProvider, $urlRouterProvider) {
-		$httpProvider.interceptors.push('homdnaInterceptors');
-		$urlRouterProvider.otherwise('/login');
+	function config ($urlRouterProvider) {
+		$urlRouterProvider.otherwise('/');
 	}
 
-	config.$inject = ['$httpProvider', '$urlRouterProvider'];
+	config.$inject = ['$urlRouterProvider'];
 
 	angular.module('HACKATHON')
 		.config(config);
