@@ -3,7 +3,7 @@
 
 	function config ($stateProvider) {
 		$stateProvider.state('issues-form', {
-			url: '/:issue',
+			url: '/issue/:issue',
 			templateUrl: 'app/issuesForm/issuesForm.html',
 			controller: 'issuesFormCtrl as formCtrl'
 		});

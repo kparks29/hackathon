@@ -7,8 +7,14 @@
 				return response.data;
 			});
 		}
+    function getIssueIndexDetails () {
+      return $http.get('common/data/issuesIndex.json').then(function (response) {
+        return response.data;
+      });
+    }
 		return {
-			getIssueDetails: getIssueDetails
+			getIssueDetails: getIssueDetails,
+      getIssueIndexDetails: getIssueIndexDetails
 		};
 	}
 
