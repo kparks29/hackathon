@@ -20,6 +20,8 @@
 // Override styleguide
 body {
 	margin: 0;
+  background-color: $homdnaCardBackgroundColor;
+  min-height: 100vh;
 }
 
 * {
