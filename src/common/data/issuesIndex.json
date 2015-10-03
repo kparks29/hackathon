@@ -14,5 +14,13 @@
     "slug": "issue-number-two",
     "imageUrl": "http://cdn.theatlantic.com/assets/media/img/mt/2014/04/AP54010101583/lead_large.jpg?1430157224",
     "description": "Statistics show people who are living in south LA have lower education than other cities. As a result, it causes of poor labor market outcomes .People only able to find low paid jobs"
+  },
+  {
+    "_id": 3,
+    "title": "No jobs for recently released convicts",
+    "issue": "jobs",
+    "slug": "issue-number-three",
+    "imageUrl": "http://media2.fdncms.com/eastbayexpress/imager/hawk-aavan-jonsson-has-taught-firefighting-skills-to-students-but-cant-ge/u/zoom/2120030/feature-2.jpg",
+    "description": "Statistics show people who are living in south LA have lower education than other cities. As a result, it causes of poor labor market outcomes .People only able to find low paid jobs"
   }
 ]}
