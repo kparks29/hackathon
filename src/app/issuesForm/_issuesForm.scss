@@ -1,9 +1,51 @@
+//*=====================================*//
+// PAGE SPECIFIC STYLE OVERRIDES
+//*=====================================*//
+
 #issues-form {
 	background-color: $homdnaCardBackgroundColor;
 	padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh;
 	h2 {
 		padding-top: 20px;
 		text-align: center;
 		margin-top: 0;
+    font-family: $mainFont;
 	}
+  h3 {
+    text-align: left;
+    margin-left: 0;
+  }
+  .issues-form-container {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px;
+    & textarea {
+      width: 100%;
+      margin: 10px 0;
+    }
+  }
+  .form-input {
+    text-align: center;
+  }
+  button.primary {
+    max-width: 200px;
+    margin: 0;
+  }
+  input.secondary {
+    width: 100%;
+    max-width: 600px;
+    margin: 0;
+  }
+}
+
+
+@include breakpoint(smart-phone){
+  #issues-form {
+    h3 {
+      margin-top: 0;
+    }
+  }
 }

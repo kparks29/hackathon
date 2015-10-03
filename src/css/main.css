@@ -339,7 +339,7 @@
 .large-button {
   height: 44px;
   width: calc(100% - 25px);
-  max-width: 580px;
+  max-width: 380px;
   font-family: source_sans_prosemibold;
   font-size: 14px;
   margin: 0 15px 15px;
@@ -349,7 +349,12 @@
   border: none;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  text-align: center; }
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease; }
   .large-button:disabled {
     color: #FFFFFF;
     background-color: #B1B5B8; }
@@ -359,18 +364,24 @@
   background-color: #F9BF3B; }
   .primary.selected {
     background-color: #FCC64C; }
+  .primary:hover {
+    background-color: #c88d06; }
 
 .secondary {
   color: #FFFFFF;
   background-color: #26A65B; }
   .secondary.selected {
     background-color: #2CB966; }
+  .secondary:hover {
+    background-color: #186739; }
 
 .tertiary {
   color: #546A79;
   background-color: #ECF0F1; }
   .tertiary.selected {
     background-color: #E1E3E4; }
+  .tertiary:hover {
+    background-color: #abb1b4; }
 
 form .form-input {
   position: relative; }
@@ -659,11 +670,42 @@ form.submitted textarea.ng-invalid-required {
 
 #issues-form {
   background-color: #F3F3F3;
-  padding: 0; }
+  padding: 0;
+  overflow-x: hidden;
+  min-height: 100vh; }
   #issues-form h2 {
     padding-top: 20px;
     text-align: center;
-    margin-top: 0; }
+    margin-top: 0;
+    font-family: source_sans_proregular; }
+  #issues-form h3 {
+    text-align: left;
+    margin-left: 0; }
+  #issues-form .issues-form-container {
+    text-align: left;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 15px; }
+    #issues-form .issues-form-container textarea {
+      width: 100%;
+      margin: 10px 0; }
+  #issues-form .form-input {
+    text-align: center; }
+  #issues-form button.primary {
+    max-width: 200px;
+    margin: 0; }
+  #issues-form input.secondary {
+    width: 100%;
+    max-width: 600px;
+    margin: 0; }
+
+@media (min-device-width: 320px) and (max-device-width: 480px) {
+  #issues-form h3 {
+    margin-top: 0; } }
 
 body {
   margin: 0; }
+
+* {
+  outline: none;
+  box-sizing: border-box; }
