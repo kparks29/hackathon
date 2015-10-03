@@ -1,0 +1,462 @@
+@import "../src/css/main.css";
+@import "../src/styles/utilities/colors";
+@import "../src/styles/utilities/mixins";
+@import "../src/styles/utilities/icons";
+@import "../src/styles/utilities/global-variables";
+@import "../src/styles/common/buttons";
+@import "../src/styles/common/forms";
+@import "../src/styles/common/footer";
+@import "../src/styles/common/modal";
+
+
+
+html, body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 40px 0 20px;
+	color: $homdnaDarkFont;
+}
+
+body {
+	padding: 0;
+	.flex-container {
+		width: 33%;
+		height: 100%;
+		padding: 5px;
+		float: left;
+	}
+}
+
+#item-list {
+	ul {
+		float: right;
+		width: 33%;
+		list-style-type: none;
+		text-align: left;
+		font-size: 14px;
+		margin-right: 25px;
+		a {
+			text-decoration: none;
+			color: $homdnaDarkFont;
+			&:visited {
+				color: $homdnaDarkFont;
+			}
+		}
+		li {
+			padding: 5px 0;
+			margin: 5px 0;
+			border: none;
+			&.active {
+				color: #4F8EF7;
+				border-right: 2px solid #4F8EF7;
+			}
+		}
+	}
+}
+
+#item-description {
+	height: 100%;
+	overflow: scroll;
+	padding-bottom: 60%;
+
+
+	ul {
+		width: 100%;
+		list-style-type: none;
+		margin-bottom: 50px;
+
+		li {
+		padding-bottom: 20px;
+
+			p {
+				text-align: center;
+				padding: 10px 0;
+				margin: 15px 0 0;
+				border: 2px solid white;
+				border-bottom: none;
+			}
+			select {
+				width: 150px;
+			}
+		}
+		&.font-descriptions li p {
+			text-transform: capitalize;
+		}
+	}
+	.code {
+		width: 100%;
+		padding: 10px;
+		margin: 0;
+		color: white;
+		font-weight: 900;
+		background-color: #333;
+		border: 2px solid #eee;
+	}
+
+	.tag {
+		color: #F93B6A;
+	}
+
+	.attr {
+		color: #8AE62E;
+	}
+
+	.str {
+		color: #FFEB99;
+	}
+
+	.css-attr {
+		color: #19E8E8;
+	}
+
+	.css-var {
+		color: #F97719;
+	}
+	.css-value {
+		color: #9933FF;
+	}
+	.tab {
+		padding-left: 30px;
+	}
+	.text-left {
+		text-align: left;
+	}
+	.center {
+		text-align: center;
+	}
+	.no-margin {
+		margin: 0;
+	}
+	.borderRadius {
+		border-radius: $borderRadius;
+		border: 3px solid $homdnaDarkFont;
+		height: 50px;
+		width: 50%;
+		margin: 20px auto;
+	}
+	.letterSpacing {
+		letter-spacing: $letterSpacing;
+	}
+	.mainFont {
+		font-family: $mainFont;
+	}
+	.noMainFont {
+		font-family: none;
+	}
+	.icon-background {
+		@include iconBackground('../src/assets/images/icons/icon_concierge.svg');
+		background-color: $homdnaDarkFont;
+	    width: 50px;
+	    height: 50px;
+	    margin: 0 auto;
+	}
+	.hide-arrow {
+		@include hideArrow();
+	}
+	.icon-container {
+		width: 100%;
+	}
+	.icons {
+		height: 125px;
+		width: 125px;
+		display: inline-block;
+		h4 {
+			font-size: 12px;
+		}
+	}
+	.container {
+		width: 100%;
+		min-height: 60px;
+		.col-50 {
+			width: 50%;
+			float: left;
+			h5 {
+				text-align: center;
+			}
+			select {
+			    width: 50%;
+			    margin: 0 25%;
+			}
+			input {
+				border: 1px solid black;
+			}
+			&.visible-arrows {
+				input {
+					height: 40px;
+					width: calc(100% - 30px);
+					margin: 0 15px 15px;
+					color: $homdnaDarkFont;
+					border-radius: $borderRadius;
+					padding: 0 0 0 13px;
+					&::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+					    opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	.box-shadow {
+		@include setBoxShadow(0 0 15px 5px #888888);
+		height: 10px;
+		width: 50%;
+		margin: 20px auto;
+	}
+	.light-background {
+		background-color: $homdnaCardBackgroundColor;
+		padding: 20px;
+		form {
+			p {
+				margin: 15px;
+				padding: 0;
+				border: none;
+			}
+			select {
+				width: calc(100% - 30px);
+			}
+			.homdna-checkbox {
+				margin: 0;
+				span {
+					&.sg-icon-checkbox {
+						background-color: $homdnaGreen;
+					}
+				}
+			}
+		}
+	}
+	.checkbox-color {
+		background-color: green;
+	}
+	.footer {
+		.tab-item {
+			float: left;
+		    font-size: 10px;
+		    line-height: 14px;
+		    text-decoration: none;
+		}
+	}
+	
+}
+
+
+
+#item-demo {
+	padding-left: 20px;
+	#iphone {
+	    height: 735px;
+	    width: 430px;
+	    border: 75px solid transparent;
+	    border-image: url('iphone.png') 30% stretch;
+	    border-image-slice: 16% 18%;
+	    border-top: 110px;
+	    border-bottom: 120px;
+		margin: 0 auto;
+	}
+	p {
+		padding: 15px;
+	}
+}
+
+
+
+
+.homdna-white {
+	background-color: $homdnaWhite;
+	color: $homdnaDarkFont;
+}
+.homdna-darkblue {
+	background-color: $homdnaDarkBlue;
+	color: white;
+}
+.homdna-darkblue-active {
+	background-color: $homdnaDarkBlueActive;
+	color: white;
+}
+.homdna-yellow {
+	background-color: $homdnaYellow;
+	color: white;
+}
+.homdna-yellow-active {
+	background-color: $homdnaYellowActive;
+	color: white;
+}
+.homdna-gray {
+	background-color: $homdnaGray;
+	color: $homdnaDarkFont;
+}
+.homdna-darkgray {
+	background-color: $homdnaDarkGray;
+	color: $homdnaDarkFont;
+}
+.homdna-lightgray {
+	background-color: $homdnaLightGray;
+	color: $homdnaDarkFont;
+}
+.homdna-lightgray-active {
+	background-color: $homdnaLightGrayActive;
+	color: $homdnaDarkFont;
+}
+.homdna-green {
+	background-color: $homdnaGreen;
+	color: white;
+}
+.homdna-green-active {
+	background-color: $homdnaGreenActive;
+	color: white;
+}
+.homdna-darkfont {
+	background-color: $homdnaDarkFont;
+	color: white;
+}
+.homdna-card-bgcolor {
+	background-color: $homdnaCardBackgroundColor;
+	color: $homdnaDarkFont;
+}
+.homdna-red {
+	background-color: $homdnaRed;
+	color: white;
+}
+
+.source-sans-pro-extralight-italic {
+    font-family: source_sans_proXLtIt;
+}
+.source-sans-pro-extralight {
+    font-family: source_sans_proextralight;
+}
+.source-sans-pro-light-italic {
+    font-family: source_sans_prolight_italic;
+}
+.source-sans-pro-light {
+    font-family: source_sans_prolight;
+}
+.source-sans-pro-semibold-italic {
+    font-family: source_sans_proSBdIt;
+}
+.source-sans-pro-semibold {
+    font-family: source_sans_prosemibold;
+}
+.source-sans-pro-bold-italic {
+    font-family: source_sans_probold_italic;
+}
+.source-sans-pro-bold {
+    font-family: source_sans_probold;
+}
+.source-sans-pro-black-italic {
+    font-family: source_sans_problack_italic;
+}
+.source-sans-pro-black {
+    font-family: source_sans_problack;
+}
+.source-sans-pro-regular-italic {
+    font-family: source_sans_proitalic;
+}
+.source-sans-pro-regular {
+    font-family: source_sans_proregular;
+}
+
+.icon {
+	background-color: $homdnaDarkFont;
+	width: 48px;
+	height: 50px;
+	margin: 0 auto;
+}
+.sg-icon-add {
+	@include iconBackground('../src/assets/images/icons/icon_add.svg');
+}
+.sg-icon-alerts {
+	@include iconBackground('../src/assets/images/icons/icon_alerts.svg');
+}
+.sg-icon-appliances {
+	@include iconBackground('../src/assets/images/icons/icon_appliances.svg');
+	width: 50px;
+}
+.sg-icon-arrowgraphup {
+	@include iconBackground('../src/assets/images/icons/icon_arrowgraphup.svg');
+}
+.sg-icon-backarrow {
+	@include iconBackground('../src/assets/images/icons/icon_backarrow.svg');
+}
+.sg-icon-camera {
+	@include iconBackground('../src/assets/images/icons/icon_camera.svg');
+}
+.sg-icon-checkbox {
+	@include iconBackground('../src/assets/images/icons/icon_checkbox.svg');
+}
+.sg-icon-close {
+	@include iconBackground('../src/assets/images/icons/icon_close.svg');
+}
+.sg-icon-concierge {
+	@include iconBackground('../src/assets/images/icons/icon_concierge.svg');
+	width: 50px;
+}
+.sg-icon-curation {
+	@include iconBackground('../src/assets/images/icons/icon_curation.svg');
+	width: 50px;
+}
+.sg-icon-delete {
+	@include iconBackground('../src/assets/images/icons/icon_delete.svg');
+}
+.sg-icon-doc {
+	@include iconBackground('../src/assets/images/icons/icon_doc.svg');
+}
+.sg-icon-documents {
+	@include iconBackground('../src/assets/images/icons/icon_documents.svg');
+	width: 50px;
+}
+.sg-icon-downarrow {
+	@include iconBackground('../src/assets/images/icons/icon_downarrow.svg');
+}
+.sg-icon-features {
+	@include iconBackground('../src/assets/images/icons/icon_features.svg');
+	width: 50px;
+}
+.sg-icon-forwardarrow {
+	@include iconBackground('../src/assets/images/icons/icon_forwardarrow.svg');
+}
+.sg-icon-hamburgermenu {
+	@include iconBackground('../src/assets/images/icons/icon_hamburgermenu.svg');
+}
+.sg-icon-homdna {
+	@include iconBackground('../src/assets/images/icons/icon_homdna.svg');
+	width: 50px;
+}
+.sg-icon-img {
+	@include iconBackground('../src/assets/images/icons/icon_img.svg');
+}
+.sg-icon-logout {
+	@include iconBackground('../src/assets/images/icons/icon_logout.svg');
+}
+.sg-icon-marketpulse {
+	@include iconBackground('../src/assets/images/icons/icon_marketpulse.svg');
+}
+.sg-icon-pdf {
+	@include iconBackground('../src/assets/images/icons/icon_pdf.svg');
+}
+.sg-icon-property {
+	@include iconBackground('../src/assets/images/icons/icon_property.svg');
+}
+.sg-icon-rooms {
+	@include iconBackground('../src/assets/images/icons/icon_rooms.svg');
+	width: 50px;
+}
+.sg-icon-search {
+	@include iconBackground('../src/assets/images/icons/icon_search.svg');
+}
+.sg-icon-settings {
+	@include iconBackground('../src/assets/images/icons/icon_settings.svg');
+}
+.sg-icon-trash {
+	@include iconBackground('../src/assets/images/icons/icon_trash.svg');
+}
+.sg-icon-trendingdown {
+	@include iconBackground('../src/assets/images/icons/icon_trendingdown.svg');
+}
+.sg-icon-trendingup {
+	@include iconBackground('../src/assets/images/icons/icon_trendingup.svg');
+}
+.sg-icon-uparrow {
+	@include iconBackground('../src/assets/images/icons/icon_uparrow.svg');
+}
+.sg-icon-wand {
+	@include iconBackground('../src/assets/images/icons/icon_wand.svg');
+}
