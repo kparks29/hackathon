@@ -338,7 +338,7 @@
 
 .large-button {
   height: 44px;
-  width: calc(100% - 30px);
+  width: calc(100% - 25px);
   max-width: 580px;
   font-family: source_sans_prosemibold;
   font-size: 14px;
@@ -386,7 +386,7 @@ form .select-icon {
 
 form .homdna-checkbox {
   height: 40px;
-  width: calc(100% - 30px);
+  width: calc(100% - 40px);
   font: 100 18px source_sans_proregular;
   line-height: 40px;
   margin: 0 15px 15px;
@@ -419,7 +419,7 @@ form input[type="text"], form input[type="password"], form input[type="date"],
 form input[type="email"], form input[type="number"], form input[type="url"],
 form input[type="search"], form input[type="tel"] {
   height: 40px;
-  width: calc(100% - 30px);
+  width: calc(100% - 40px);
   font-family: source_sans_proregular;
   color: #546A79;
   font-size: 14px;
@@ -438,7 +438,7 @@ form input[type="number"]::-webkit-inner-spin-button, form input[type="number"]:
 
 form select {
   height: 40px;
-  width: calc(100% - 30px);
+  width: calc(100% - 40px);
   font-family: source_sans_proregular;
   color: #546A79;
   font-size: 14px;
@@ -454,8 +454,8 @@ form select {
   appearance: none; }
 
 form textarea {
-  height: 80px;
-  width: calc(100% - 30px);
+  height: 160px;
+  width: calc(100% - 55px);
   font-family: source_sans_proregular;
   color: #546A79;
   font-size: 14px;
@@ -657,5 +657,13 @@ form.submitted textarea.ng-invalid-required {
     color: #E75752;
     padding: 0 0 30px; }
 
-.large-button {
-  max-width: 100%; }
+#issues-form {
+  background-color: #F3F3F3;
+  padding: 0; }
+  #issues-form h2 {
+    padding-top: 20px;
+    text-align: center;
+    margin-top: 0; }
+
+body {
+  margin: 0; }

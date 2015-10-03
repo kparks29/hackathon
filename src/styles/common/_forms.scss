@@ -5,7 +5,7 @@ $inputFontSize: 							14px !default;
 $inputPadding:	 							0 0 0 13px !default;
 $inputMargin: 								0 15px 15px !default;
 $inputBackgroundColor:						$homdnaWhite !default;
-$inputWidth:								calc(100% - 30px) !default;
+$inputWidth:								calc(100% - 40px) !default;
 $inputBorder:								none !default;
 
 $labelMargin:								0 15px !default;
@@ -24,7 +24,8 @@ $selectIconMargin:							0 !default;
 
 $formInputPosition:							relative !default;
 
-$textAreaHeight:							80px !default;
+$textAreaWidth:								calc(100% - 55px) !default;
+$textAreaHeight:							160px !default;
 $textAreaResize:							none !default;
 $textAreaPadding:							13px !default;
 
@@ -145,7 +146,7 @@ form {
 
 	textarea {
 		height: $textAreaHeight;
-		width: $inputWidth;
+		width: $textAreaWidth;
 		font-family: $inputFont;
 		color: $inputColor;
 		font-size: $inputFontSize;
