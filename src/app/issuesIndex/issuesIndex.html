@@ -1,8 +1,10 @@
 <div id="issues-index">
-   <ul>
-     <li ng-repeat="issue in indexCtrl.issues">
-       <a href="#/issue/{{issue.slug}}">{{ issue.title }}</a><br/>
-        {{ issue.description }}<br/>
-      </li>
-   </ul>
+	<ul>
+    	<li ng-repeat="issue in indexCtrl.issues">
+	    	<img ng-src="{{issue.imageUrl}}">
+    		<div class="title">
+    			<a href="#/issue/{{issue.slug}}">{{ issue.title }}</a>
+    		</div>
+    	</li>
+	</ul>
 </div>
