@@ -5,7 +5,7 @@
 
 		var $filter;
 
-		beforeEach(module('HOMDNA.filters'));
+		beforeEach(module('HACKATHON.filters'));
 
 		beforeEach(inject(function (_$filter_) {
 			$filter = _$filter_;
