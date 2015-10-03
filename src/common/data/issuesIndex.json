@@ -5,13 +5,14 @@
     "issue": "homeless",
     "slug": "la-homeless-state-of-emergency",
     "imageUrl": "http://i.huffpost.com/gen/1845447/images/o-HOMELESS-facebook.jpg",
-    "description": "The Los Angeles City Council on Tuesday declared a state of emergency on homelessness, calling for $100 million to help address the growing crisis..."
+    "description": "South LA received less than 11% of the 2007 Los Angeles Continuum of Care Grant Awards and had the second lowest ratio of grant dollars per homeless person ($607).  South LA has the highest percentage of its  homeless population who are unsheltered (91%) – compared to 83% of the entire County’s homeless population."
   },
   {
     "_id": 2,
-    "title": "Issue Number Two",
-    "issue": "issue",
+    "title": "Provide a better education for next generations",
+    "issue": "education",
     "slug": "issue-number-two",
-    "description": "Lorem ipsum..."
+    "imageUrl": "http://cdn.theatlantic.com/assets/media/img/mt/2014/04/AP54010101583/lead_large.jpg?1430157224",
+    "description": "Statistics show people who are living in south LA have lower education than other cities. As a result, it causes of poor labor market outcomes .People only able to find low paid jobs"
   }
 ]}
