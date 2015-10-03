@@ -9,20 +9,11 @@
 		});
 	}
 
-	function issuesIndexCtrl () {
-		this.issues = [
-      {
-        "_id": 1,
-        "title": "LA Homeless State of Emergency",
-        "slug": "la-homeless-state-of-emergency",
-        "description": "The Los Angeles City Council on Tuesday declared a state of emergency on homelessness, calling for $100 million to help address the growing crisis..."
-      },
-      {
-        "_id": 2,
-        "title": "Issue Number Two",
-        "slug": "issue-number-two",
-        "description": "Lorem ipsum..."
-      }];
+	function issuesIndexCtrl (issueService) {
+		var self = this;
+		issueService.getIssueIndexDetails().then(function (issueIndexDetails) {
+			self.issues = issueIndexDetails.issues;
+		});
 	}
 
 	angular.module('HACKATHON.controllers')
