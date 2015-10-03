@@ -723,13 +723,19 @@ form.submitted textarea.ng-invalid-required {
 #issues-index {
   background-color: #F3F3F3;
   padding: 20px; }
+  #issues-index h2 {
+    text-align: center;
+    text-transform: uppercase; }
   #issues-index ul {
     padding: 0; }
   #issues-index li {
+    cursor: hand;
     list-style-type: none; }
     #issues-index li img {
-      width: 100%; }
+      width: 100%;
+      border-radius: 3px; }
     #issues-index li .title {
+      border-radius: 3px;
       background-color: white;
       width: 100%;
       height: 40px;
@@ -737,8 +743,7 @@ form.submitted textarea.ng-invalid-required {
       text-align: center; }
       #issues-index li .title a {
         text-decoration: none;
-        color: #546A79;
-        cursor: hand; }
+        color: #546A79; }
 
 body {
   margin: 0; }

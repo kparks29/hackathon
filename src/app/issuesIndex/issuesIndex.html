@@ -1,9 +1,10 @@
 <div id="issues-index">
+	<h2>Voice of South LA</h2>
 	<ul>
-    	<li ng-repeat="issue in indexCtrl.issues">
+    	<li ng-repeat="issue in indexCtrl.issues" ng-click="indexCtrl.goToIssue(issue.issue)">
 	    	<img ng-src="{{issue.imageUrl}}">
     		<div class="title">
-    			<a href="#/issue/{{issue.slug}}">{{ issue.title }}</a>
+    			<a href="">{{ issue.title }}</a>
     		</div>
     	</li>
 	</ul>
