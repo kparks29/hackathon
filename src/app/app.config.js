@@ -1,12 +1,11 @@
 (function () {
 	'use strict';
 
-	function config ($urlRouterProvider, $locationProvider) {
+	function config ($urlRouterProvider) {
 		$urlRouterProvider.otherwise('/');
-		$locationProvider.html5Mode(true).hashPrefix('!');
 	}
 
-	config.$inject = ['$urlRouterProvider', '$locationProvider'];
+	config.$inject = ['$urlRouterProvider'];
 
 	angular.module('HACKATHON')
 		.config(config);
