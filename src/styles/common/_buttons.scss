@@ -1,0 +1,77 @@
+$buttonBorder:								none !default;
+$buttonFont:								source_sans_prosemibold !default;
+$buttonTextTransform:						uppercase !default;
+$buttonTextAlign:							center !default;
+
+// primary
+$primaryButtonColor:						$homdnaWhite !default;
+$primaryButtonBackgroundColor:				$homdnaYellow !default;
+$primaryButtonBackgroundColorActive:		$homdnaYellowActive !default;
+
+// secondary
+$secondaryButtonColor:						$homdnaWhite !default;
+$secondaryButtonBackgroundColor:			$homdnaGreen !default;
+$secondaryButtonBackgroundColorActive:		$homdnaGreenActive !default;
+
+// tertiary
+$tertiaryButtonColor:						$homdnaDarkFont !default;
+$tertiaryButtonBackgroundColor:				$homdnaLightGray !default;
+$tertiaryButtonBackgroundColorActive:		$homdnaLightGrayActive !default;
+
+// disabled button
+$diabledButtonColor:						$homdnaWhite !default;
+$disabledBackgroundColor:					$homdnaDarkGray !default;
+
+// large button
+$largeButtonHeight:							44px !default;
+$largeButtonFontSize: 						14px !default;
+$largeButtonMargin: 						0 15px 15px !default;
+$largeButtonBackgroundColor:				$homdnaYellow !default;
+$largeButtonWidth:							calc(100% - 30px) !default;
+$largeButtonPadding:						0 0 13px !default;
+$largeButtonMaxWidth:						580px !default;
+
+
+.large-button {
+	height: $largeButtonHeight;
+	width: $largeButtonWidth;
+	max-width: $largeButtonMaxWidth;
+	font-family: $buttonFont;
+	font-size: $largeButtonFontSize;
+	margin: $largeButtonMargin;
+	padding: $largeButtonPadding;
+	line-height: $largeButtonHeight;
+	border-radius: $borderRadius;
+	border: $buttonBorder;
+	letter-spacing: $letterSpacing;
+	text-transform: $buttonTextTransform;
+	text-align: $buttonTextAlign;
+	&:disabled {
+		color: $diabledButtonColor;
+		background-color: $disabledBackgroundColor;
+	}
+}
+
+.primary {
+	color: $primaryButtonColor;
+	background-color: $primaryButtonBackgroundColor;
+	&.selected {
+		background-color: $primaryButtonBackgroundColorActive;
+	}
+}
+
+.secondary {
+	color: $secondaryButtonColor;
+	background-color: $secondaryButtonBackgroundColor;
+	&.selected {
+		background-color: $secondaryButtonBackgroundColorActive;
+	}
+}
+
+.tertiary {
+	color: $tertiaryButtonColor;
+	background-color: $tertiaryButtonBackgroundColor;
+	&.selected {
+		background-color: $tertiaryButtonBackgroundColorActive;
+	}
+}

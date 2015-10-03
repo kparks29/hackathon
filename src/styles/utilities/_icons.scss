@@ -1,0 +1,105 @@
+$largeIconHeight:								100px !default;
+$largeIconWidth:								100px !default;
+$largeIconMargin:								0 auto !default;
+
+
+.large-icon {
+	height: $largeIconHeight;
+	background-color: $homdnaDarkBlue;
+	width: $largeIconWidth;
+	margin: $largeIconMargin;
+}
+
+.icon-add {
+	@include iconBackground('../assets/images/icons/icon_add.svg');
+}
+.icon-alerts {
+	@include iconBackground('../assets/images/icons/icon_alerts.svg');
+}
+.icon-appliances {
+	@include iconBackground('../assets/images/icons/icon_appliances.svg');
+}
+.icon-arrowgraphup {
+	@include iconBackground('../assets/images/icons/icon_arrowgraphup.svg');
+}
+.icon-backarrow {
+	@include iconBackground('../assets/images/icons/icon_backarrow.svg');
+}
+.icon-camera {
+	@include iconBackground('../assets/images/icons/icon_camera.svg');
+}
+.icon-checkbox {
+	@include iconBackground('../assets/images/icons/icon_checkbox.svg');
+}
+.icon-close {
+	@include iconBackground('../assets/images/icons/icon_close.svg');
+}
+.icon-concierge {
+	@include iconBackground('../assets/images/icons/icon_concierge.svg');
+}
+.icon-curation {
+	@include iconBackground('../assets/images/icons/icon_curation.svg');
+}
+.icon-delete {
+	@include iconBackground('../assets/images/icons/icon_delete.svg');
+}
+.icon-doc {
+	@include iconBackground('../assets/images/icons/icon_doc.svg');
+}
+.icon-documents {
+	@include iconBackground('../assets/images/icons/icon_documents.svg');
+}
+.icon-downarrow {
+	@include iconBackground('../assets/images/icons/icon_downarrow.svg');
+}
+.icon-features {
+	@include iconBackground('../assets/images/icons/icon_features.svg');
+}
+.icon-forwardarrow {
+	@include iconBackground('../assets/images/icons/icon_forwardarrow.svg');
+}
+.icon-hamburgermenu {
+	@include iconBackground('../assets/images/icons/icon_hamburgermenu.svg');
+}
+.icon-homdna {
+	@include iconBackground('../assets/images/icons/icon_homdna.svg');
+}
+.icon-img {
+	@include iconBackground('../assets/images/icons/icon_img.svg');
+}
+.icon-logout {
+	@include iconBackground('../assets/images/icons/icon_logout.svg');
+}
+.icon-marketpulse {
+	@include iconBackground('../assets/images/icons/icon_marketpulse.svg');
+}
+.icon-pdf {
+	@include iconBackground('../assets/images/icons/icon_pdf.svg');
+}
+.icon-property {
+	@include iconBackground('../assets/images/icons/icon_property.svg');
+}
+.icon-rooms {
+	@include iconBackground('../assets/images/icons/icon_rooms.svg');
+}
+.icon-search {
+	@include iconBackground('../assets/images/icons/icon_search.svg');
+}
+.icon-settings {
+	@include iconBackground('../assets/images/icons/icon_settings.svg');
+}
+.icon-trash {
+	@include iconBackground('../assets/images/icons/icon_trash.svg');
+}
+.icon-trendingdown {
+	@include iconBackground('../assets/images/icons/icon_trendingdown.svg');
+}
+.icon-trendingup {
+	@include iconBackground('../assets/images/icons/icon_trendingup.svg');
+}
+.icon-uparrow {
+	@include iconBackground('../assets/images/icons/icon_uparrow.svg');
+}
+.icon-wand {
+	@include iconBackground('../assets/images/icons/icon_wand.svg');
+}

@@ -1,0 +1,63 @@
+$footerIconHeight:						22px !default;
+$footerIconWidth:						22px !default;
+$footerIconMargin:						0 auto !default;
+$footerHeight:							50px !default;
+$footerWidth:							100% !default;
+$footerFontSize:						10px !default;
+$footerPadding:							0 !default;
+$footerZIndex:							9 !default;
+$footerTextAlign:						center !default;
+$footerFontFamily:						$mainFont;
+
+$footerTabItemHeight:					100% !default;
+$footerTabItemWidth:					105px !default;
+$footerTabItemPadding:					7px 0 0 !default;
+$footerTabItemOpacity:					1 !default;
+$footerTabItemBorderTop:				1px solid $homdnaDarkBlueActive !default;
+
+$footerMainTabItemWidth:				110px !default;
+$footerMainTabItemBorder:				1px solid $homdnaDarkBlueActive !default;
+$footerMainTabItemBorderBottom:			none !default;
+
+@mixin tapbarWidth ($width) {
+	width: $width / 320px * 100%;
+}
+
+
+.footer {
+	z-index: $footerZIndex; // keep above .view-overlay
+	width: $footerWidth;
+	height: $footerHeight;
+	font-size: $footerFontSize;
+	color: $homdnaDarkGray;
+	text-align: $footerTextAlign;
+	padding: $footerPadding;
+	.tab-item {
+		@include tapbarWidth($footerTabItemWidth);
+		height: $footerTabItemHeight;
+		background-color: $homdnaDarkBlue;
+		color: $homdnaDarkGray;
+		padding: $footerTabItemPadding;
+		font-family: $footerFontFamily;
+		opacity: $footerTabItemOpacity;
+		border-top: $footerTabItemBorderTop;
+	}
+	.tab-item-main {
+		@include tapbarWidth($footerMainTabItemWidth);
+		border: $footerMainTabItemBorder;
+		border-bottom: $footerMainTabItemBorderBottom;
+	}
+	.icon {
+		width: $footerIconWidth;
+		height: $footerIconHeight;
+		margin: $footerIconMargin;
+		background-color: $homdnaDarkGray;
+	}
+	.active {
+		background-color: $homdnaDarkBlueActive;
+		color: $homdnaWhite;
+		.icon {
+			background-color: $homdnaWhite;
+		}
+	}
+}

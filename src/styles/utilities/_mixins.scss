@@ -1,0 +1,39 @@
+@mixin breakpoint($point) {
+	@if $point == smart-phone {
+		@media (min-device-width: 320px) and (max-device-width: 480px) { @content; }
+	}
+	@else if $point == smart-phone-landscape {
+		@media (min-width: 321px) { @content; }
+	}
+	@else if $point == smart-phone-portrait {
+		@media (max-width: 320px)  { @content; }
+	}
+}
+
+@mixin iconBackground($url) {
+	background-repeat: no-repeat;
+    mask-image: url($url);
+    -webkit-mask-image: url($url);
+    display: block;
+	&:before {
+		display: none;
+	}
+}
+
+@mixin hideArrow() {
+	-webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+@mixin setBoxShadow($value) {
+	box-shadow: $value;
+	-webkit-box-shadow: $value;
+	-moz-box-shadow: $value;
+}
+
+@mixin hideNumberArrow() {
+	&::-webkit-inner-spin-button, &::-webkit-outer-spin-button {
+		@include hideArrow();
+	}
+}

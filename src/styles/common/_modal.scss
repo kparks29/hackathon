@@ -1,0 +1,260 @@
+$modalHeaderTop:									67px !default;
+$modalHeaderPadding:								0 !default;
+$modalHeaderBackgroundImage:						none !default;
+
+$modalHeaderTitleMargin:							16px 0 18px !default;
+$modalHeaderTitlePadding:							5px 0 0 !default;
+$modalHeaderTitleFontSize:							24px !default;
+$modalHeaderTitleTextTransform:						uppercase !default;
+
+
+$modalHeaderCancelButtonBorder:						none !default;
+$modalHeaderCancelButtonPadding:					20px 0 0 !default;
+$modalHeaderCancelButtonWidth:						50px !default;
+$modalHeaderCancelButtonMargin:						0 -6px 0 0 !default;
+$modalHeaderCancelButtonBeforePadding:				0 !default;
+$modalHeaderCancelButtonBeforeFontSize:				36px !default;
+
+$modalHeaderButtonTextMargin:						0 15px 0 !default;
+$modalHeaderButtonTextPadding:						15px 0 0 0 !default;
+$modalHeaderButtonTextFontSize:						16px !default;
+
+$modalPhotoSectionWidth:							100% !default;
+$modalPhotoSectionHeight:							175px !default;
+$modalPhotoSectionTextTransform:					uppercase !default;
+$modalPhotoSectionBorderRadius:						0 !default;
+
+$modalEmptyPhotoSectionFontSize:					20px !default;
+$modalEmptyPhotoSectionFontWeight:					bold !default;
+$modalEmptyPhotoSectionTextAlign:					center !default;
+$modalEmptyPhotoSectionPadding:						40px 0 0 !default;
+$modalEmptyPhotoSectionCircleDiameter:				60px !default;
+$modalEmptyPhotoSectionCircleBorderRadius:			50% !default;
+$modalEmptyPhotoSectionCircleBorder:				1px solid $homdnaDarkBlue !default;
+$modalEmptyPhotoSectionCircleMargin:				0 auto 25px !default;
+$modalEmptyPhotoSectionCirclePadding:				16px 14px !default;
+$modalEmptyPhotoSectionIconFontSize:				30px !default;
+$modalEmptyPhotoSectionIconHeight:					24px !default;
+$modalEmptyPhotoSectionMarginTop:					16px !default;
+
+$modalPhotoSectionErrorBorder:						2px solid $homdnaRed !default;
+$modalPhotoSectionPaddingTop:						38px !default;
+
+$modalFormMargin:									15px 0 18px !default;
+
+$modalAddImageBorder:								1px solid $homdnaDarkBlue !default;
+$modalAddImageHeight:								40px !default;
+$modalAddImageWidth:								calc(100% - 30px) !default;
+$modalAddImageMargin:								0 15px 15px !default;
+$modalAddImagePadding:								9px 13px 0 !default;
+$modalAddImageTextAlign:							center !default;
+$modalAddImageFont:									bold 16px $mainFont !default;
+
+$modalAddImageContainerMargin:						0 auto !default;
+$modalAddImageContainerHeight:						100% !default;
+$modalAddImageIconMargin:							0 10px -4px 0 !default;
+$modalAddImageIconHeight:							20px !default;
+$modalAddImageIconWidth:							26px !default;
+$modalAddImageIconDisplay:							inline-block !default;
+
+$modalDeleteImagePosition:						 	absolute !default;
+$modalDeleteImageRadius:						   	32px !default;
+$modalDeleteImageLocation:						   	10px !default;
+$modalDeleteImagePadding:						   	7px 7px 7px 8px !default;
+$modalDeleteImageOpacity:						   	0.75 !default;
+$modalDeleteImageIconRadius:					    18px !default;
+
+$modalImagesOverflow:								hidden !default;
+$modalImagesBackgroundSize:					 		cover !default;
+$modalImagesBackgroundPosition:						center !default;
+$modalImagesPosition:								relative !default;
+$modalImagesHideShadow:								none !default;
+
+$modalDeleteButtonTextAlign:						center !default;
+$modalDeleteButtonPadding:							0 0 30px !default;
+
+$modalSliderPosition:								absolute;
+$modalSliderTop:									0;
+$modalSliderLeft:									0 !important;
+$modalSliderWidth:									100% !important;
+
+// android variables
+$androidModalHeaderTitleHeight:						auto !default;
+$androidModalHeaderTitleBarPadding:					0 !default;
+$androidModalHeaderTitleLineHeight:					44px !default;
+$androidModalHeaderTitleLineMargin:					12px 0 0 !default;
+
+
+.modal {
+	background-color: $homdnaCardBackgroundColor;
+
+	.scroll-content {
+		background-color: $homdnaCardBackgroundColor;
+	}
+	.has-header {
+		top: $modalHeaderTop;
+		padding: $modalHeaderPadding;
+	}
+
+	// all modal headers need this class along with title and button
+	.header {
+		min-height: $modalHeaderTop;
+		background-color: $homdnaDarkBlue;
+		background-image: $modalHeaderBackgroundImage;
+		.title {
+			margin: $modalHeaderTitleMargin;
+			padding: $modalHeaderTitlePadding;
+			font-size: $modalHeaderTitleFontSize;
+			color: $homdnaWhite;
+			text-transform: $modalHeaderTitleTextTransform;
+		}
+		.button {
+			background-color: $homdnaDarkBlue;
+			border: $modalHeaderCancelButtonBorder;
+			color: $homdnaWhite;
+			padding: $modalHeaderCancelButtonPadding;
+			width: $modalHeaderCancelButtonWidth;
+			margin: $modalHeaderCancelButtonMargin;
+			&:before {
+				padding: $modalHeaderCancelButtonBeforePadding;
+				font-size: $modalHeaderCancelButtonBeforeFontSize;
+			}
+			&.button-text {
+				margin: $modalHeaderButtonTextMargin;
+				padding: $modalHeaderButtonTextPadding;
+				font-size: $modalHeaderButtonTextFontSize;
+			}
+		} 
+	}
+
+	.photo-section {
+		width: $modalPhotoSectionWidth;
+		height: $modalPhotoSectionHeight;
+		text-transform: $modalPhotoSectionTextTransform;
+		color: $homdnaDarkBlue;
+
+		// empty image section
+		.upload-image {
+			background-color: $homdnaGray;
+			width: $modalPhotoSectionWidth;
+			height: $modalPhotoSectionHeight;
+			font-size: $modalEmptyPhotoSectionFontSize;
+			font-weight: $modalEmptyPhotoSectionFontWeight;
+			text-align: $modalEmptyPhotoSectionTextAlign;
+			padding: $modalEmptyPhotoSectionPadding;
+			&.error {
+				border: $modalPhotoSectionErrorBorder;
+				padding-top: $modalPhotoSectionPaddingTop;
+			}
+			.spinner svg {
+				height: $modalEmptyPhotoSectionCircleDiameter;
+				width: $modalEmptyPhotoSectionCircleDiameter;
+				margin-top: $modalEmptyPhotoSectionMarginTop;
+			}
+			.icon-circle {
+				width: $modalEmptyPhotoSectionCircleDiameter;
+				height: $modalEmptyPhotoSectionCircleDiameter;
+				border-radius: $modalEmptyPhotoSectionCircleBorderRadius;
+				border: $modalEmptyPhotoSectionCircleBorder;
+				margin: $modalEmptyPhotoSectionCircleMargin;
+				padding: $modalEmptyPhotoSectionCirclePadding;
+				.icon-camera {
+					height: $modalEmptyPhotoSectionIconHeight;
+					width: $modalEmptyPhotoSectionIconFontSize;
+					background-color: $homdnaDarkBlue;
+				}
+			}
+		}
+	}
+
+	// add photo section with image already present
+	.view-images {
+		width: $modalPhotoSectionWidth;
+		height: $modalPhotoSectionHeight;
+		overflow: $modalImagesOverflow;
+		background-size: $modalImagesBackgroundSize;
+		background-position: $modalImagesBackgroundPosition;
+		position: $modalImagesPosition;
+		.card {
+			@include setBoxShadow($modalImagesHideShadow);
+			border-radius: $modalPhotoSectionBorderRadius;
+			.card-slideshow {
+				.card-slideshow-overlay {
+					display: $modalImagesHideShadow;
+				}
+				.slider-slides {
+					width: $modalSliderWidth;
+				}
+				ion-slide.slider-slide {
+					position: $modalSliderPosition;
+					top: $modalSliderTop;
+					left: $modalSliderLeft;
+				}
+			}
+		}
+		.homdna-card-slideshow {
+			.card-slideshow {
+				.photo {
+					@include setBoxShadow($modalImagesHideShadow);
+				}
+			}
+		}
+		.delete-image {
+			position: $modalDeleteImagePosition;
+			height: $modalDeleteImageRadius;
+			width: $modalDeleteImageRadius;
+			padding: $modalDeleteImagePadding;
+			right: $modalDeleteImageLocation;
+			bottom: $modalDeleteImageLocation;
+			border-radius: $modalEmptyPhotoSectionCircleBorderRadius;
+			background-color: $homdnaDarkBlue;
+			opacity: $modalDeleteImageOpacity;
+			.icon-trash {
+				position: $modalDeleteImagePosition;
+				height: $modalDeleteImageIconRadius;
+				width: $modalDeleteImageIconRadius;
+				background-color: $homdnaWhite;
+			}
+		}
+	}
+
+	// text below add photo when photo is present
+	.add-image {
+		color: $homdnaDarkBlue;
+		text-transform: $modalPhotoSectionTextTransform;
+		background-color: $homdnaCardBackgroundColor;
+		border: $modalAddImageBorder;
+		height: $modalAddImageHeight;
+		width: $modalAddImageWidth;
+		margin: $modalAddImageMargin;
+		padding: $modalAddImagePadding;
+		text-align: $modalAddImageTextAlign;
+		font: $modalAddImageFont;
+		border-radius: $borderRadius;
+		letter-spacing: $letterSpacing;
+		.add-home-photo {
+			height: $modalAddImageContainerHeight;
+			margin: $modalAddImageContainerMargin;
+		}
+		.icon-circle {
+			display: $modalAddImageIconDisplay;
+			.icon-camera {
+				height: $modalAddImageIconHeight;
+				width: $modalAddImageIconWidth;
+				background-color: $homdnaDarkBlue;
+				display: $modalAddImageIconDisplay;
+				margin: $modalAddImageIconMargin;
+			}
+		}
+	}
+
+	form {
+		margin: $modalFormMargin;
+	}
+
+	.delete {
+		text-align: $modalDeleteButtonTextAlign;
+		color: $homdnaRed;
+		padding: $modalDeleteButtonPadding;
+	}
+}

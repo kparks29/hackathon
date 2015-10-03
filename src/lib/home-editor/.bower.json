@@ -1,0 +1,35 @@
+{
+  "name": "HomdnaEditor",
+  "authors": [
+    "Chris Guevara <chris@homdna.com>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-material": "~0.9.8",
+    "angular": "~1.3.15",
+    "lodash": "~3.9.0",
+    "angular-ui-router": "~0.2.15",
+    "angular-mocks": "~1.4.0",
+    "chance": "~0.7.5"
+  },
+  "resolutions": {
+    "angular": "^1.3.0 || >1.4.0-beta.0"
+  },
+  "homepage": "https://github.com/homdna/home-editor",
+  "_release": "c096499d50",
+  "_resolution": {
+    "type": "commit",
+    "commit": "c096499d50774980b58b00912dcca23c44499674"
+  },
+  "_source": "https://github.com/homdna/home-editor.git",
+  "_target": "c096499d50774980b58b00912dcca23c44499674",
+  "_originalSource": "https://github.com/homdna/home-editor.git"
+}

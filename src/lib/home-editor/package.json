@@ -1,0 +1,40 @@
+{
+  "name": "HomdnaEditor",
+  "version": "1.0.0",
+  "description": "Webpage for editing a homdna",
+  "author": "",
+  "license": "ISC",
+  "main": "dist/home-editor-models.js",
+  "devDependencies": {
+    "angular-jsdoc": "^0.3.8",
+    "bower": "^1.4.1",
+    "gulp": "^3.8.11",
+    "gulp-inject": "^1.2.0",
+    "gulp-jsdoc": "^0.1.4",
+    "gulp-jshint": "^1.10.0",
+    "gulp-sass": "^2.0.1",
+    "gulp-shell": "^0.4.2",
+    "gulp-webserver": "^0.9.1",
+    "jasmine": "^2.3.1",
+    "jasmine-core": "^2.3.4",
+    "jsdoc": "^3.3.2",
+    "karma": "^0.12.32",
+    "karma-chrome-launcher": "^0.1.12",
+    "karma-cli": "0.0.4",
+    "karma-coverage": "^0.3.1",
+    "karma-firefox-launcher": "^0.1.6",
+    "karma-jasmine": "^0.3.5",
+    "karma-ng-html2js-preprocessor": "^0.1.2",
+    "karma-phantomjs-launcher": "^0.2.0",
+    "karma-safari-launcher": "^0.1.1",
+    "phantomjs": "^1.9.17"
+  },
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-ng-annotate": "^1.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^1.2.0",
+    "gulp-usemin": "^0.3.11",
+    "karma-ng-html2js-preprocessor": "^0.1.2"
+  }
+}

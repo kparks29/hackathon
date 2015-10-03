@@ -1,0 +1,195 @@
+$inputHeight:								40px !default;
+$inputFont: 								$mainFont !default;
+$inputColor: 								$homdnaDarkFont !default;
+$inputFontSize: 							14px !default;
+$inputPadding:	 							0 0 0 13px !default;
+$inputMargin: 								0 15px 15px !default;
+$inputBackgroundColor:						$homdnaWhite !default;
+$inputWidth:								calc(100% - 30px) !default;
+$inputBorder:								none !default;
+
+$labelMargin:								0 15px !default;
+
+$inputErrorBorder:							2px solid $homdnaRed !default;
+$inputErrorLineHeight:						36px !default;
+$inputErrorMarginLeft:						13px !default;
+
+$textAreaErrorPaddingTop:					11px !default;
+
+$selectIconPosition:						relative !default;
+$selectIconRight:							calc(45px - 100%) !default;
+$selectIconTop:								-38px !default;
+$selectIconLength:							10px !default;
+$selectIconMargin:							0 !default;
+
+$formInputPosition:							relative !default;
+
+$textAreaHeight:							80px !default;
+$textAreaResize:							none !default;
+$textAreaPadding:							13px !default;
+
+$formH3Font:								100 18px $mainFont !default;
+$formH3Margin:								20px 15px 10px !default;
+
+$checkboxFont:								100 18px $mainFont !default;
+$checkboxBorderRadius:						3px !default;
+$checkboxPosition:							relative !default;
+
+$checkboxContainerLength:					30px !default;
+$checkboxContainerRight:					0 !default;
+$checkboxContainerTop:						6px !default;
+$checkboxContainerBorder:					2px solid $homdnaLightGrayActive !default;
+$checkboxContainerPosition:					absolute !default;
+$checkboxContainerPadding:					0 !default;
+
+$checkboxIconLength:						30px !default;
+$checkboxIconCheckedBorder:					none !default;
+$checkboxIconCheckedBackground:				transparent !default;
+
+$formParagraphMargin:						15px !default;
+$formParagraphTextAlign:					center !default;
+$formParagraphFont:							300 14px $mainFont !default;
+$formParagraphColor:						$homdnaDarkFont !default;
+
+
+form {
+	.form-input {
+		position: $formInputPosition;
+	}
+
+	.select-icon {
+		position: $selectIconPosition;
+		right: $selectIconRight;
+		top: $selectIconTop;
+		height: $selectIconLength;
+		width: $selectIconLength;
+		background-color: $inputColor;
+		margin: $selectIconMargin;
+	}
+
+	// custom style for ionic checkbox
+	.homdna-checkbox {
+		height: $inputHeight;
+		width: $inputWidth;
+		font: $checkboxFont;
+		line-height: $inputHeight;
+		margin: $inputMargin;
+		background-color: $homdnaCardBackgroundColor;
+		border-radius: $borderRadius;
+		border: $inputBorder;
+		letter-spacing: $letterSpacing;
+		position: $checkboxPosition;
+		div {
+			height: $checkboxContainerLength;
+			width: $checkboxContainerLength;
+			border: $checkboxContainerBorder;
+			border-radius: $checkboxBorderRadius;
+			position: $checkboxContainerPosition;
+			top: $checkboxContainerTop;
+			right: $checkboxContainerRight;
+			padding: $checkboxContainerPadding;
+			background-color: $homdnaWhite;
+			&.checked {
+				background-color: $checkboxIconCheckedBackground;
+				border: $checkboxIconCheckedBorder;
+			}
+			span {
+				height: $checkboxIconLength;
+				width: $checkboxIconLength;
+				border-radius: $checkboxBorderRadius;
+				&.icon-checkbox {
+					background-color: $homdnaGreen;
+				}
+			}
+		}
+	}
+
+	input {
+		&[type="text"], &[type="password"], &[type="date"], 
+		&[type="email"], &[type="number"], &[type="url"],
+		&[type="search"], &[type="tel"] {
+			height: $inputHeight;
+			width: $inputWidth;
+			font-family: $inputFont;
+			color: $inputColor;
+			font-size: $inputFontSize;
+			line-height: $inputHeight;
+			margin: $inputMargin;
+			padding: $inputPadding;
+			background-color: $inputBackgroundColor;
+			border-radius: $borderRadius;
+			border: $inputBorder;
+			letter-spacing: $letterSpacing;
+		}
+	}
+
+	input[type="number"] {
+		@include hideNumberArrow();
+	}
+
+	select {
+		height: $inputHeight;
+		width: $inputWidth;
+		font-family: $inputFont;
+		color: $inputColor;
+		font-size: $inputFontSize;
+		line-height: $inputHeight;
+		margin: $inputMargin;
+		padding: $inputPadding;
+		background-color: $inputBackgroundColor;
+		border-radius: $borderRadius;
+		border: $inputBorder;
+		letter-spacing: $letterSpacing;
+		@include hideArrow;
+	}
+
+	textarea {
+		height: $textAreaHeight;
+		width: $inputWidth;
+		font-family: $inputFont;
+		color: $inputColor;
+		font-size: $inputFontSize;
+		margin: $inputMargin;
+		padding: $textAreaPadding;
+		background-color: $inputBackgroundColor;
+		border-radius: $borderRadius;
+		border: $inputBorder;
+		letter-spacing: $letterSpacing;
+		resize: $textAreaResize;
+	}
+
+	h3 {
+		font: $formH3Font;
+		margin: $formH3Margin;
+	}
+	p {
+		margin: $formParagraphMargin;
+		text-align: $formParagraphTextAlign;
+		font: $formParagraphFont;
+		color: $formParagraphColor;
+	}
+
+	label {
+		margin: $labelMargin;
+		font-size: $inputFontSize;
+		color: $inputColor;
+		font-family: $mainFont;
+	}
+
+	&.submitted {
+		input, select {
+			&.ng-invalid-required {
+				border: $inputErrorBorder;
+				line-height: $inputErrorLineHeight;
+				margin-left: $inputErrorMarginLeft;
+			}
+		}
+		textarea {
+			&.ng-invalid-required {
+				border: $inputErrorBorder;
+				margin-left: $inputErrorMarginLeft;
+				padding-top: $textAreaErrorPaddingTop;
+			}
+		}
+	}
+}
