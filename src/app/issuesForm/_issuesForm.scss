@@ -41,6 +41,26 @@
   }
 }
 
+#issues-confirm {
+  background-color: $homdnaCardBackgroundColor;
+  height: 1vh;
+  h2 {
+    padding-top: 20px;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  #icons {
+    width: 100%;
+    text-align: center;
+  }
+  .icon {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: $borderRadius;
+    margin: 10px;
+  }
+}
 
 @include breakpoint(smart-phone){
   #issues-form {

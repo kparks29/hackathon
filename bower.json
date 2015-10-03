@@ -16,8 +16,6 @@
     "chance": "~0.7.5"
   },
   "resolutions": {
-    "lodash": "3.10.x",
-    "angular-ui-router": "0.2.13",
     "angular": "1.4.3"
   }
 }

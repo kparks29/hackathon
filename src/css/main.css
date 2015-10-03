@@ -699,6 +699,23 @@ form.submitted textarea.ng-invalid-required {
     max-width: 600px;
     margin: 0; }
 
+#issues-confirm {
+  background-color: #F3F3F3;
+  height: 1vh; }
+  #issues-confirm h2 {
+    padding-top: 20px;
+    margin-top: 0;
+    text-align: center;
+    text-transform: uppercase; }
+  #issues-confirm #icons {
+    width: 100%;
+    text-align: center; }
+  #issues-confirm .icon {
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 3px;
+    margin: 10px; }
+
 @media (min-device-width: 320px) and (max-device-width: 480px) {
   #issues-form h3 {
     margin-top: 0; } }
