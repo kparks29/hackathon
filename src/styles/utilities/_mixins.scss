@@ -37,3 +37,10 @@
 		@include hideArrow();
 	}
 }
+
+@mixin transition($transitionStyle) {
+	-webkit-transition: $transitionStyle;
+  -moz-transition: $transitionStyle;
+  -o-transition: $transitionStyle;
+  transition: $transitionStyle;
+}

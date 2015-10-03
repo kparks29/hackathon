@@ -1,6 +1,6 @@
 $buttonBorder:								none !default;
-$buttonFont:								source_sans_prosemibold !default;
-$buttonTextTransform:						uppercase !default;
+$buttonFont:									source_sans_prosemibold !default;
+$buttonTextTransform:					uppercase !default;
 $buttonTextAlign:							center !default;
 
 // primary
@@ -29,8 +29,11 @@ $largeButtonMargin: 						0 15px 15px !default;
 $largeButtonBackgroundColor:				$homdnaYellow !default;
 $largeButtonWidth:							calc(100% - 25px) !default;
 $largeButtonPadding:						0 0 13px !default;
-$largeButtonMaxWidth:						580px !default;
+$largeButtonMaxWidth:						380px !default;
 
+// button hover styles
+$buttonCursor:								pointer !default;
+$buttonTransition: 						all 0.5s ease;
 
 .large-button {
 	height: $largeButtonHeight;
@@ -46,6 +49,8 @@ $largeButtonMaxWidth:						580px !default;
 	letter-spacing: $letterSpacing;
 	text-transform: $buttonTextTransform;
 	text-align: $buttonTextAlign;
+	cursor: $buttonCursor;
+	@include transition($buttonTransition);
 	&:disabled {
 		color: $diabledButtonColor;
 		background-color: $disabledBackgroundColor;
@@ -58,6 +63,9 @@ $largeButtonMaxWidth:						580px !default;
 	&.selected {
 		background-color: $primaryButtonBackgroundColorActive;
 	}
+	&:hover {
+		background-color: darken($primaryButtonBackgroundColor, 20%);
+	}
 }
 
 .secondary {
@@ -66,6 +74,9 @@ $largeButtonMaxWidth:						580px !default;
 	&.selected {
 		background-color: $secondaryButtonBackgroundColorActive;
 	}
+	&:hover {
+		background-color: darken($secondaryButtonBackgroundColorActive, 20%);
+	}
 }
 
 .tertiary {
@@ -73,5 +84,8 @@ $largeButtonMaxWidth:						580px !default;
 	background-color: $tertiaryButtonBackgroundColor;
 	&.selected {
 		background-color: $tertiaryButtonBackgroundColorActive;
+	}
+	&:hover {
+		background-color: darken($tertiaryButtonBackgroundColorActive, 20%);
 	}
 }
