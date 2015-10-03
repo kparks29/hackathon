@@ -2,12 +2,14 @@
   {
     "_id": 1,
     "title": "LA Homeless State of Emergency",
+    "issue": "homeless",
     "slug": "la-homeless-state-of-emergency",
     "description": "The Los Angeles City Council on Tuesday declared a state of emergency on homelessness, calling for $100 million to help address the growing crisis..."
   },
   {
     "_id": 2,
     "title": "Issue Number Two",
+    "issue": "issue",
     "slug": "issue-number-two",
     "description": "Lorem ipsum..."
   }
