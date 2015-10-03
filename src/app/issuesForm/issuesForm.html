@@ -1,7 +1,7 @@
 <div id="issues-form">
 	<h2>Create Message</h2>
 
-	<form>
+	<form ng-submit="formCtrl.email()">
 		<h3>Choose Recipients</h3>
 		<div class="form-input" ng-repeat="recipient in formCtrl.recipients track by $index">
 			<label for="recipient{{ $index + 1 }}">Recipient {{ $index + 1 }}</label>
@@ -11,6 +11,6 @@
 		<div class="form-input">
 			<textarea ng-model="formCtrl.message"></textarea>
 		</div>
-		<input type="button" class="large-button secondary" value="Make A Difference" />
+		<input type="submit" class="large-button secondary" value="Make A Difference" />
 	</form>
 </div>
