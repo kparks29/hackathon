@@ -4,6 +4,7 @@
 	h2 {
 		text-align: center;
 		text-transform: uppercase;
+		font-family: $mainFont;
 	}
 	ul {
 	    padding: 0;
@@ -25,6 +26,7 @@
 			a {
 				text-decoration: none;
 				color: $homdnaDarkFont;
+				font-family: $mainFont;
 			}
 		}
 	}

@@ -758,7 +758,8 @@ form.submitted textarea.ng-invalid-required {
   padding: 20px; }
   #issues-index h2 {
     text-align: center;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    font-family: source_sans_proregular; }
   #issues-index ul {
     padding: 0; }
   #issues-index li {
@@ -776,7 +777,8 @@ form.submitted textarea.ng-invalid-required {
       text-align: center; }
       #issues-index li .title a {
         text-decoration: none;
-        color: #546A79; }
+        color: #546A79;
+        font-family: source_sans_proregular; }
 
 body {
   margin: 0;
