@@ -2,7 +2,7 @@
 	'use strict';
 
 	function config ($urlRouterProvider) {
-		$urlRouterProvider.otherwise('/');
+		$urlRouterProvider.otherwise('/email');
 	}
 
 	config.$inject = ['$urlRouterProvider'];
